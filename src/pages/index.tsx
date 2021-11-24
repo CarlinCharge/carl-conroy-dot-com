@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
-import Project from '../components/Project'
+import Project from 'components/Project'
 
 
 const Home: NextPage = () => {
   return (
   <div>
     <h1> 
-      <Project/>
+      <Project title="My New Project"/>
       Hello World!
     </h1>
   </div>
@@ -15,3 +15,4 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
