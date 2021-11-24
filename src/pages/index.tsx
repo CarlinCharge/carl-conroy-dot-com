@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Project from 'components/Project'
+import Project from '../components/Project'
 
 
 const Home: NextPage = () => {
