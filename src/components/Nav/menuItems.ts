@@ -4,8 +4,8 @@ export interface MenuItem {
 }
 
 const menuItemsList: MenuItem[] = [
-  { title: "Projects", url: "#" },
-  { title: "About", url: "#" },
+  { title: "Projects", url: "/projects" },
+  { title: "About", url: "/about" },
 ];
 
 export default menuItemsList;
