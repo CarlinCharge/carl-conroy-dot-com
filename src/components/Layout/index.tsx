@@ -1,5 +1,7 @@
 import Nav from "components/Nav";
 import { ReactNode } from "react";
+import { Global } from "./styles";
+import styled from "styled-components";
 
 interface Props {
   children: ReactNode;
@@ -7,10 +9,10 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div>
+    <Global>
       <Nav />
       {children}
-    </div>
+    </Global>
   );
 };
 

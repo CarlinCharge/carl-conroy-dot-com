@@ -1,18 +1,19 @@
 import React from "react";
 import menuItems, { MenuItem } from "./menuItems";
-import Link from "next/link";
+import { StyledLink } from "components/Link.styled";
+import { NavStyled } from "./styles";
 
 const Nav = () => {
   return (
-    <nav>
+    <NavStyled>
       {menuItems.map((item: MenuItem, index: number) => {
         return (
-          <Link href={item.url}>
+          <StyledLink href={item.url}>
             <a>{item.title}</a>
-          </Link>
+          </StyledLink>
         );
       })}
-    </nav>
+    </NavStyled>
   );
 };
 export default Nav;
